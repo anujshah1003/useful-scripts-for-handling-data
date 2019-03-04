@@ -22,8 +22,8 @@ for data_dir in data_dir_list:
         if not os.path.exists(img_rename):
             os.rename(img_name,img_rename)
         
-    print ('----Complete renaming files from all folders----')
+    print ('------Complete renaming all folders: {}------'.format(data_dir))
 
     os.chdir(path)
 
-print ('------Complete renaming all folders: {}------'.format(data_dir))
+print ('----Complete renaming files from all folders----')
