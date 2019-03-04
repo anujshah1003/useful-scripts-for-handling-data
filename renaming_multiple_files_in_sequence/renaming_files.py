@@ -7,7 +7,7 @@ data_path = 'D:\\Trainings-2019\\flower_recognition\\flowers-recognition\\flower
 data_dir = 'daisy'
 data_list = os.listdir(os.path.join(data_path,data_dir))
 
-
+print (os.path.join(data_path,data_dir))
 os.chdir(os.path.join(data_path,data_dir))
 # The base name of image files
 base_name=data_dir
