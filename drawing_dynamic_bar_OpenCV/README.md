@@ -11,7 +11,7 @@ Let's take a scenario where you want to represent eye opening which changes dyna
 And for this example let's see how we can plot such dynamic bar as shown below
 
 ## Example
-!["example"](https://github.com/anujshah1003/useful-scripts-for-handling-data/blob/master/drawing_dynamic_bar_OpenCV/frame_2.png)
+https://user-images.githubusercontent.com/20814689/196972831-6a537f40-3584-41f1-94cd-40a4cbd5f754.mp4
 
 ## Explanation
 
