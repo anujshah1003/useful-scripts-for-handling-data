@@ -11,7 +11,8 @@ Let's take a scenario where you want to represent eye opening which changes dyna
 And for this example let's see how we can plot such dynamic bar as shown below
 
 ## Example
-https://user-images.githubusercontent.com/20814689/196972831-6a537f40-3584-41f1-94cd-40a4cbd5f754.mp4
+
+https://user-images.githubusercontent.com/20814689/196973549-28461fe6-185a-4173-9303-88e099d30cda.mp4
 
 ## Explanation
 
