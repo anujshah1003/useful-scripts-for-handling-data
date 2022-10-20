@@ -10,6 +10,8 @@ This kind of dynamic bar are very interesting to present and visualize your resu
 Let's take a scenario where you want to represent eye opening which changes dynamically every frame.
 And for this example let's see how we can plot such dynamic bar as shown below
 
+Note: open the PPT in slideshow mode to see the explanantion
+
 ## Example
 
 https://user-images.githubusercontent.com/20814689/196973549-28461fe6-185a-4173-9303-88e099d30cda.mp4
