@@ -21,11 +21,12 @@ def main():
     if file1 and file2:
         img1 = Image.open(file1)
         img2 = Image.open(file2)
-
-        ## Display image
+        
+        ## Display filename
         with filename_1: st.write(f"Image 1: {file1.name}")
         with filename_2: st.write(f"Image 2: {file2.name}")
 
+        ## Display image
         image_comparison(img1,img2,label1="Image 1",label2="Image 2",width=1100)
     else:
         st.write("select images to compare")
