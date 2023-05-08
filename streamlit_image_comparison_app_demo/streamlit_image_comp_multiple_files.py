@@ -44,20 +44,20 @@ def main():
         images2 = [Image.open(file) for file in file2]
 
         n_imgs = len(images1)
-    
-        # Fill layout
-        #with container.container():
+
         ## Select image based on the current counter
         idx = st.session_state.counter%n_imgs
         img1 = images1[idx]
         img2 = images2[idx]
 
-        ## Display image
+        ## Display filename
         st.write(f"Image Count: {idx+1}/{n_imgs}")
         with filename_1: st.write(f"Image 1: {file1[idx].name}")
         with filename_2: st.write(f"Image 2: {file2[idx].name}")
 
+        ## Display image
         image_comparison(img1,img2,label1="Image 1",label2="Image 2",width=1100)
-
+    else:
+        st.write("select images to compare")
 if __name__ == "__main__":
     main()
