@@ -40,10 +40,14 @@ def main():
     filename_1, filename_2 = st.columns([1, 1])
 
     if file1 and file2:
-        images1 = [Image.open(file) for file in file1]
-        images2 = [Image.open(file) for file in file2]
+        # Sort files by name to ensure matching pairs
+        file1_sorted = sorted(file1, key=lambda f: f.name)
+        file2_sorted = sorted(file2, key=lambda f: f.name)
+        
+        images1 = [Image.open(file) for file in file1_sorted]
+        images2 = [Image.open(file) for file in file2_sorted]
 
-        n_imgs = len(images1)
+        n_imgs = min(len(images1), len(images2))
 
         ## Select image based on the current counter
         idx = st.session_state.counter%n_imgs
@@ -52,8 +56,8 @@ def main():
 
         ## Display filename
         st.write(f"Image Count: {idx+1}/{n_imgs}")
-        with filename_1: st.write(f"Image 1: {file1[idx].name}")
-        with filename_2: st.write(f"Image 2: {file2[idx].name}")
+        with filename_1: st.write(f"Image 1: {file1_sorted[idx].name}")
+        with filename_2: st.write(f"Image 2: {file2_sorted[idx].name}")
 
         ## Display image
         image_comparison(img1,img2,label1="Image 1",label2="Image 2",width=1100)
